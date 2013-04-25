@@ -6,7 +6,7 @@ include_once('resources/init.php');
             
             if ( empty($name) ) {
                 $error = 'You must submit a category name';
-            } else if (caterogy_exists($name)) {
+            } else if (category_exists('name', $name)) {
                 $error = 'That category already exists';
             } else if (strlen($name) > 24) {
                 $error = 'Category name can only be up to 24 characters';
@@ -14,7 +14,9 @@ include_once('resources/init.php');
             
             if (!isset($error)) {
                 add_caterogy($name);
-                 $error = 'Success!';
+                 
+                header('Location: add_post.php');
+                die();
             }
         }//end if isset
 ?>
