@@ -1,0 +1,14 @@
+*{border: 1px red solid;}
+body{
+    background-color: black;
+}
+h1{margin: 0 auto;}
+pagewrap {
+    margin: 0 auto;
+    width: 1000px;
+    
+}
+header {
+    color: red;
+    height: 100px;
+}
