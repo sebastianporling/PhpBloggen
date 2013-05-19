@@ -2,6 +2,11 @@
 session_start(); // Must start session first thing
 include_once('resources/init.php');
 
+if(!strlen(trim($_SESSION['username']))) {
+ header("Location:index.php");
+ exit();
+}
+
 $post = get_posts($_GET['id']);
 
 if (isset($_POST['title'], $_POST['contents'], $_POST['category'])) {
@@ -35,11 +40,12 @@ if (isset($_SESSION['id'])) {
     // Put stored session variables into local php variable
     $userid = $_SESSION['id'];
     $username = $_SESSION['username'];
-    $toplinks = '<a href="member_profile.php?id=' . $userid . '">' . $username . '</a> &bull; 
+    $toplinks = '<div id="mini_pic"><img src="memberFiles/' . $userid . '/pic1.jpg" alt="Ad" width="20"/></div>
+        <a href="member_profile.php?id=' . $userid . '">' . $username . '</a> &bull; 
 	<a href="member_account.php">Account</a> &bull; 
 	<a href="logout.php">Log Out</a>';
 } else {
-    $toplinks = '<a href="join_form.php">Register </a> &bull;  <a href="login.php">  Login</a>';
+    $toplinks = '<a href="login.php">  Login</a> &bull; <a href="join_form.php">Register </a> ';
 }
 ?>
 <!DOCTYPE html>
@@ -51,6 +57,7 @@ if (isset($_SESSION['id'])) {
     </head>
     <body>
         <div id="top">
+            <div id="logo2"><img src="img/logo2.png" width="120"></div>
             <div id="login"><?php echo $toplinks; ?></div>
         </div>
         <div id="pagewrap">

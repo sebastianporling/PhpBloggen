@@ -8,11 +8,20 @@ if (isset($_SESSION['id'])) {
     // Put stored session variables into local php variable
     $userid = $_SESSION['id'];
     $username = $_SESSION['username'];
-    $toplinks = '<a href="member_profile.php?id=' . $userid . '">' . $username . '</a> &bull; 
+    $toplinks = '<div id="mini_pic"><img src="memberFiles/' . $userid . '/pic1.jpg" alt="Ad" width="20"/></div>
+        <a href="member_profile.php?id=' . $userid . '">' . $username . '</a> &bull; 
 	<a href="member_account.php">Account</a> &bull; 
 	<a href="logout.php">Log Out</a>';
+    $delete = "delete_post.php";
+    $edit = "edit_post.php";
+    $addp = "add_post.php";
+    $addc = "add_category.php";
 } else {
-    $toplinks = '<a href="join_form.php">Register </a> &bull;  <a href="login.php">  Login</a>';
+    $toplinks = '<a href="login.php">  Login</a> &bull; <a href="join_form.php">Register </a> ';
+    $delete = "login.php";
+    $edit = "login.php";
+    $addp = "login.php";
+    $addc = "login.php";
 }
 ?>
 <!DOCTYPE html>
@@ -27,6 +36,7 @@ if (isset($_SESSION['id'])) {
     </head>
     <body>
         <div id="top">
+            <div id="logo2"><a href="index.php"><img src="img/logo2.png" width="120"></a></div>
             <div id="login"><?php echo $toplinks; ?></div>
         </div>
         <div id="pagewrap">
@@ -37,8 +47,8 @@ if (isset($_SESSION['id'])) {
 
             <div id='nav'>
                 <div id="home"><a href="index.php"> Home </a></div>
-                <div id="addp"><a href="add_post.php"> Add a Post </a></div>
-                <div id="addc"><a href="add_category.php"> Add a Category </a></div>
+                <div id="addp"><a href="<?php echo $addp;?>"> Add a Post </a></div>
+                <div id="addc"><a href="<?php echo $addc;?>"> Add a Category </a></div>
                 <div id="cat"><a href="category_list.php"> Category List </a></div>
             </div>
 
@@ -57,8 +67,8 @@ if (isset($_SESSION['id'])) {
                     <div id="meny">
                         <menu>
                             <ul>
-                                <span class="delete"><li><b><a href="delete_post.php?id=<?php echo $post['post_id']; ?>">Delete This Post</a></b></li></span>
-                                <span class="edit"><li><b><a href="edit_post.php?id=<?php echo $post['post_id']; ?>">Edit This Post</a></b></li></span>
+                                <span class="delete"><li><b><a href="<?php echo $delete;?>?id=<?php echo $post['post_id']; ?>">Delete This Post</a></b></li></span>
+                                <span class="edit"><li><b><a href="<?php echo $edit;?>?id=<?php echo $post['post_id']; ?>">Edit This Post</a></b></li></span>
                             </ul>
                         </menu>
                     </div>

@@ -4,6 +4,13 @@ session_start(); // Must start session first thing
 Created By Adam Khoury @ www.flashbuilding.com 
 -----------------------June 20, 2008----------------------- 
 */
+$id = "";
+$country = "";
+$state = "";
+$city = "";
+$bio = "";
+$sql = "";
+$accounttype = "";
 // Here we run a login check
 if (!isset($_SESSION['id'])) { 
    echo 'Please <a href="login.php">log in</a> to access your account';

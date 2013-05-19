@@ -9,27 +9,47 @@ body{
 
     font-family: helvetica;
 }
-
-
+#mini_pic {
+    float: left;
+    margin-right: 5px;
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+    background-color: #141414;
+    box-shadow: inset 0px -5px 10px 0px #3a3a3a;
+    box-shadow: 0 0 5px 1px #000;
+}
+#logo2 {
+    width: 120px;
+    float: left;
+    margin-top: 3px;
+    margin-left: 13%
+}
+#login a{
+    font-weight:bold;
+    color: #141414;
+    text-shadow:1px 1px 0 #3a3a3a;
+}
 div#pagewrap {
     margin: 0 auto;
     margin-top: 60px;
-    width: 880px;
+    max-width: 880px;
+    min-width: 400px;
 
 }
 div#top {
     float: left;
     display: block;
     position: fixed;
-    height: 40px;
+    height: 50px;
     width: 100%;
     top: 0px;
     left: 0px;
-    background-image: url('img/top.jpg') ;
+    background-image: url('img/top2.png') ;
 }
 div#login {
     float:right;
-    margin-right: 200px;
+    margin-right: 13%;
     margin-top: 5px;
 }
 div#login a{
@@ -38,13 +58,13 @@ div#login a{
 div#header {
     background-color: red;
     height: 100px;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 
 }
 #header img {
-    margin-left: 280px;
+    margin-left: 30%;
     margin-top: 5px;
 }
 #nav a{
@@ -57,15 +77,15 @@ div#posts1 {
     margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
-    background-color: green;
+    background-color: lime;
     min-height: 150px;
     width: 410px;
     float: left;
     display: block;
     word-wrap: break-word;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 div#posts2 {
     padding: 5px;
@@ -78,9 +98,9 @@ div#posts2 {
     float: left;
     display: block;
     word-wrap: break-word;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 div#posts3 {
     padding: 5px;
@@ -93,9 +113,9 @@ div#posts3 {
     float: left;
     display: block;
     word-wrap: break-word;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 div#posts4 {
     padding: 5px;
@@ -108,9 +128,9 @@ div#posts4 {
     float: left;
     display: block;
     word-wrap: break-word;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 div#posts5 {
     padding: 5px;
@@ -123,9 +143,9 @@ div#posts5 {
     float: left;
     display: block;
     word-wrap: break-word;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 
 #home{
@@ -134,10 +154,10 @@ div#posts5 {
     text-align: center;
     margin-top: 20px;
     float: left;
-    margin-right: 20px;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    margin-right: 10px;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 #addp{
     height: 40px; width: 205px;
@@ -146,9 +166,10 @@ div#posts5 {
     margin-top: 20px;
     float: left;
     margin-right: 20px;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    margin-left: 10px;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 #addc{
     height: 40px; width: 205px;
@@ -156,34 +177,35 @@ div#posts5 {
     text-align: center;
     margin-top: 20px;
     float: left;
-    margin-right: 20px;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    margin-right: 10px;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 #cat{
     height: 40px; width: 205px;
     background-color: yellow;
     text-align: center;
     margin-top: 20px;
+    margin-left: 10px;
     float: left;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 
 }
 #blabla {
     padding-bottom: 20px;
     margin-top: 20px;
     background-color: pink;
-    min-height: 150px;
+    min-height: 300px;
     width: 100%;
     float: left;
     display: block;
     word-wrap: break-word;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 #editpost {
     padding-bottom: 20px;
@@ -194,22 +216,92 @@ div#posts5 {
     float: left;
     display: block;
     word-wrap: break-word;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 #center {
     margin-left: 230px;
 }
 #footer {
     margin-top: 20px;
-    height: 100px;
+    height: 70px;
     width: 100%;
     background-color: red;
-    -moz-box-shadow: 0 0 20px 0px #000;
-    -webkit-box-shadow: 0 0 20px 0px #000;
-    box-shadow: 0 0 20px 0px #000;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
     float: left;
+}
+#cate1  {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    float: left;
+    display: block;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: red;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
+}
+#cate2  {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    float: left;
+    display: block;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: cyan;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
+}
+#cate3  {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    float: left;
+    display: block;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: blue;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
+}
+#cate4  {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    float: left;
+    display: block;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: yellow;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
+}
+#cate5  {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    float: left;
+    display: block;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: purple;
+    -moz-box-shadow: 0 0 20px 5px #000;
+    -webkit-box-shadow: 0 0 20px 5px #000;
+    box-shadow: 0 0 20px 5px #000;
 }
 #meny {
     margin-left: 100px;
